@@ -1,0 +1,40 @@
+section#left {
+  max-width: 31.75rem;
+  display: grid;
+
+  & strong {
+    font: var(--overline);
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+
+    margin-bottom: 0.75rem;
+  }
+
+  & h1 {
+    font: var(--display-large);
+    color: var(--content-primary);
+    text-transform: uppercase;
+
+    margin-bottom: 2.375rem;
+  }
+
+  & > div {
+    max-width: 24.125rem;
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-bottom: 2.25rem;
+
+    & p:first-child {
+      font: var(--paragraph-medium);
+      color: var(--content-brand);
+    }
+
+    & p:last-child {
+      font: var(--paragraph-small);
+      color: var(--content-secondary);
+    }
+  }
+}
