@@ -53,6 +53,9 @@
 }
 
 body {
+  padding-block: 4.75rem 9.5625rem;
+  padding-inline: 2rem;
+
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 1) 20%,
@@ -66,4 +69,19 @@ body {
   background-position: center;
 
   height: 100vh;
+
+  & header {
+    max-width: 68.625rem;
+    margin: 0 auto;
+
+    & img {
+      width: 10.75rem;
+    }
+  }
+
+  @media (width < 28em) {
+    & header {
+      text-align: center;
+    }
+  }
 }
