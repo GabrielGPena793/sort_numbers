@@ -3,3 +3,56 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
+  --color-inverse: #030203;
+
+  --background-primary: #020202;
+  --background-secondary: #111012;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
+
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77c0aa;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
+
+  --gradient-border: linear-gradient(
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+
+  --gradient-background: linear-gradient(#d586e0 0%, #91a1fa 98.93%);
+  --gradient-content: linear-gradient(#c7c9cc 0%, #3d3d3d 100%);
+
+  --ff-sora: "Sora", system-ui;
+  --ff-roboto-mono: "Roboto Mono", system-ui;
+  --ff-roboto-flex: "Roboto Flex", system-ui;
+
+  --display-large: 800 4.5rem/130% var(--ff-sora);
+  --display-medium: 800 2.5rem/130% var(--ff-sora);
+  --display-large: 700 2rem/130% var(--ff-sora);
+
+  --overline: 700 1rem/150% var(--ff-roboto-mono);
+
+  --paragraph-large: 400 1rem/150% var(--ff-roboto-flex);
+  --paragraph-medium: 400 0.875rem/150% var(--ff-roboto-flex);
+  --paragraph-large: 400 0.75rem/150% var(--ff-roboto-flex);
+
+  --label-medium: 700 1.25rem/150% var(--ff-roboto-flex);
+  --label-small: 700 1rem/150% var(--ff-roboto-flex);
+}
+
+body {
+  background: var(--gradient-background);
+  height: 100vh;
+}
