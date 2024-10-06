@@ -52,7 +52,42 @@
           </div>
         </div>
       </section>
-      <section id="right"></section>
+      <section id="right">
+        <strong>Quero sortear:</strong>
+        <p>
+          defina o intervalo e a quantidade de números, clique em "Sortear" e
+          veja os resultados na tela. É rápido e fácil!
+        </p>
+
+        <form>
+          <div id="container_inputs">
+            <div>
+              <label for="numbers">NÚMEROS</label>
+              <input type="number" id="numbers" />
+            </div>
+
+            <div>
+              <label for="from">DE</label>
+              <input type="number" id="from" />
+            </div>
+
+            <div>
+              <label for="until">ATÉ</label>
+              <input type="number" id="until" />
+            </div>
+          </div>
+
+          <div id="container_check">
+            <input type="checkbox" name="repeatNumber" id="repeatNumber" />
+            <label for="repeatNumber">Não repetir número</label>
+          </div>
+
+          <button type="submit" id="generateButton">
+            Sortear
+            <img src="./assets/icons/arrow-right.svg" alt="seta para direita" />
+          </button>
+        </form>
+      </section>
     </main>
     <script src="./script.js"></script>
   </body>
