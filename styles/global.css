@@ -53,6 +53,17 @@
 }
 
 body {
-  background: var(--gradient-background);
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 1) 20%,
+      rgba(255, 255, 255, 0.01) 100%
+    ),
+    url("../assets/Shapes.png");
+
+  background-color: rgb(0, 0, 0);
+
+  background-size: cover;
+  background-position: center;
+
   height: 100vh;
 }
