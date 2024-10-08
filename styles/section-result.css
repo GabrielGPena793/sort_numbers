@@ -1,0 +1,158 @@
+section#result {
+  max-width: 30.125rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & h2 {
+    font: var(--label-medium);
+    color: var(--content-primary);
+    margin-bottom: 0.5rem;
+  }
+
+  & h3 {
+    font: var(--overline);
+    color: var(--content-secondary);
+    margin-bottom: 2.5rem;
+  }
+
+  & p {
+    margin-bottom: 2.5rem;
+
+    & span {
+      font: 700 3rem/150% var(--ff-roboto-mono);
+      color: var(--content-brand);
+    }
+  }
+
+  & button {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    background: var(--background-tertiary);
+    font: var(--label-medium);
+    border-radius: 8px;
+    padding-block: 1rem;
+    color: var(--content-primary);
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 9px;
+      width: 100%;
+      height: 100%;
+
+      background: var(--gradient-border);
+      z-index: -1;
+    }
+
+    &:hover {
+      background: var(--background-secondary);
+
+      & img {
+        animation: play-rotate 1s ease-in-out infinite;
+      }
+
+      &::before {
+        width: 101.08%;
+        height: 105%;
+        animation: bg-gradient 1s ease-in-out infinite alternate;
+      }
+    }
+  }
+}
+
+@keyframes bg-gradient {
+  0% {
+    background: linear-gradient(
+      0deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  20% {
+    background: linear-gradient(
+      60deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  40% {
+    background: linear-gradient(
+      120deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  55% {
+    background: linear-gradient(
+      180deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  75% {
+    background: linear-gradient(
+      240deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  90% {
+    background: linear-gradient(
+      300deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+
+  100% {
+    background: linear-gradient(
+      360deg,
+      #77c0af 0%,
+      #d1dc97 14.84%,
+      #e9a9b3 32.15%,
+      #d586e0 65.79%,
+      #91a1fa 84.58%
+    );
+  }
+}
+
+@keyframes play-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes result-animation {
+}
