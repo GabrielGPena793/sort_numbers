@@ -53,7 +53,7 @@
         </div>
       </section>
 
-      <!-- <section id="right">
+      <section id="right">
         <strong>Quero sortear:</strong>
         <p>
           defina o intervalo e a quantidade de números, clique em "Sortear" e
@@ -64,17 +64,17 @@
           <div id="container_inputs">
             <div>
               <label for="numbers">NÚMEROS</label>
-              <input type="number" id="numbers" placeholder="0" />
+              <input type="number" id="numbers" placeholder="0" required />
             </div>
 
             <div>
               <label for="from">DE</label>
-              <input type="number" id="from" placeholder="0" />
+              <input type="number" id="from" placeholder="0" required />
             </div>
 
             <div>
               <label for="until">ATÉ</label>
-              <input type="number" id="until" placeholder="0" />
+              <input type="number" id="until" placeholder="0" required />
             </div>
           </div>
 
@@ -91,28 +91,15 @@
             <img src="./assets/icons/arrow-right.svg" alt="seta para direita" />
           </button>
         </form>
-      </section> -->
+      </section>
 
-      <section id="result">
+      <section id="result" class="hidden">
         <h2>Resultado do sorteio</h2>
         <h3>1º resultado</h3>
 
-        <div id="results">
-          <div class="result-container">
-            <div id="bg-result"></div>
-            <span>23</span>
-          </div>
-          <div class="result-container">
-            <div id="bg-result"></div>
-            <span>23</span>
-          </div>
-          <div class="result-container">
-            <div id="bg-result"></div>
-            <span>23</span>
-          </div>
-        </div>
+        <div id="results"></div>
 
-        <button>
+        <button id="sortAgain">
           Sortear novamente
 
           <div class="container-play">
